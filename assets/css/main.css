@@ -1311,7 +1311,7 @@
 
 	body {
 		background-color: #183026;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("https://cdn.pixabay.com/photo/2016/11/14/08/24/flowers-1822900_960_720.jpg"), url("../../images/bg.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
@@ -1724,7 +1724,8 @@
 		.button.style2 {
 			color: #3a3939;
 			background: #fff;
-			box-shadow: inset 0 0 0 1px #fff;
+			box-shadow: inset 0 0 0 1px #fff
+			border: color: #00, 10px;
 		}
 
 			input[type="button"].style2:hover,
@@ -1999,16 +2000,17 @@
 	#banner {
 		position: relative;
 		color: #fff;
-		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
-		text-align: center;
-		background: #35b88f url("images/banner.svg") bottom center no-repeat;
-		padding: 5em 0 5em 0;
+		border: solid 2px #fff;
+		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.4);
+		text-align: ;
+		background: #000, bottom center no-repeat;
+		padding: 40px,
 		margin: 0;
 		background-size: 125% auto;
 	}
 
 		#banner .button {
-			color: #35b882;
+			color: #333;
 			text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
 		}
 
