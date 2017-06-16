@@ -1,0 +1,12 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "this is my portfolio from elevenfifty.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "elena k. hickey",
+  "license": "ISC"
+}
