@@ -1,0 +1,65 @@
+
+
+body {
+    overflow-x: hidden;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Coloured_Voronoi_2D.svg/1024px-Coloured_Voronoi_2D.svg.png');
+    background-repeat: repeat, no-repeat;
+        background-size: auto, cover;
+        background-position: top left, center 0;
+        background-attachment: fixed, fixed;
+        font-family:  ;
+        font-size: 15pt;
+        line-height: 1.75em;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: #3a3939;
+        text-shadow: 0 0 0.8px rgba(58, 57, 57, 0.25);
+}
+
+    }
+
+table {
+        width: 100px;
+        position: left;
+    }
+
+thead, tbody, tr, td, th { 
+    display: block;
+    font-size: 8px; }
+
+tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+thead th {
+    height: 50px;
+
+    /*text-align: left;*/
+}
+
+tbody {
+    height: 300px;
+    overflow-y: auto;
+    font-size: 10px;
+}
+
+thead {
+    /* fallback */
+}
+
+
+tbody td, thead th {
+    width: 19.2%;
+    float: left;
+    font-size: 8px;
+}
+
+
+
+footer {
+    background-color: #f9f9f9;
+    font-size: 14px;
+}

@@ -1310,7 +1310,7 @@
 /* Basic */
 
 	body {
-		background-color: #183026;
+		background-color: #000000;
 		background-image: url("https://cdn.pixabay.com/photo/2016/11/14/08/24/flowers-1822900_960_720.jpg"), url("../../images/bg.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
@@ -1461,12 +1461,17 @@
 	}
 
 /* Image */
-
-	.image {
-		display: inline-block;
-		border: 0;
-	}
-
+		.image { 
+			position: relative; background: black; 
+		}
+		.image img { 
+			display: block;
+			width: 100%; 
+		}
+		.image img:hover { 
+			opacity: 0.3
+		}
+	
 		.image img {
 			display: block;
 			width: 100%;
@@ -1497,6 +1502,7 @@
 				margin: 0 auto;
 				width: auto;
 			}
+		
 
 /* List */
 
@@ -2002,7 +2008,7 @@
 		color: #fff;
 		border: solid 2px #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.4);
-		text-align: ;
+		text-align: center;
 		background: #000, bottom center no-repeat;
 		padding: 40px,
 		margin: 0;

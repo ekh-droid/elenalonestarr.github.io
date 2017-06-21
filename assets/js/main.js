@@ -1,9 +1,38 @@
-/*
-	Overflow by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
+
+/*index div text*/
+function showDiv() {
+   document.getElementById('welcomeDiv').style.display = "block", "none";
+};
+
+
+/*! Fades out the whole page when clicking links */
+$('a').click(function(e) {
+e.preventDefault();
+newLocation = this.href;
+$('body').fadeOut('slow', newpage);
+});
+function newpage() {
+window.location = newLocation;
+};
+
+$(document).ready(function(){
+
+/*! Fades in whole page on load */
+$('body').css('display', 'none');
+$('body').fadeIn(500);
+
+}); 
+
+/*! Reloads page on every visit */
+function Reload() {
+try {
+var headElement = document.getElementsByTagName("head")[0];
+if (headElement && headElement.innerHTML)
+headElement.innerHTML += "<meta http-equiv=\"refresh\" content=\"1\">";
+}
+catch (e) {}
+};
 
 (function($) {
 
@@ -72,6 +101,8 @@
 				offset: function() { return (skel.breakpoint('mobile').active ? 70 : 190); }
 			});
 
+
+
 		// Full screen header.
 			if (settings.fullScreenHeader) {
 
@@ -104,9 +135,9 @@
 
 			}
 
-		// Parallax background.
+// Parallax background.
 
-			// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
+	// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms for better performance.
 				if (skel.vars.browser == 'ie'
 				||	skel.vars.mobile)
 					settings.parallax = false;

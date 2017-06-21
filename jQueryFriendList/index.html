@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Ajax Turtorial</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+			<link rel="stylesheet" type="text/css" href="public/css/main.css">
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+		</head>
+<body>
+		<div class="container">
+		<div class ="jumbotron">
+			
+		<b><center><h1>jQuery friendslist</h1></b>
+			<h2>create a list of friends, with name & age attributes.</h2>
+			<p>as well as remove friends when you feel like burning bridges</p>
+			<br>
+			
+			<p>Name: <input type="text" id="name"></p>
+			<p>Age: <input type="text" id="age"></p>
+			<button id="add-friend" class="btn btn-success">Add!</button>
+		</center>
+	</div>
+</div>
+       <div class ="container">
+       <div class ="jumbotron" style="background: rgba(255, 255, 255, 0.6)" >
+
+		<table class="table table-striped">
+    <thead>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="filterable-cell">
+        <ul id="friends">
+			</ul></td>
+        
+    </tr>
+    </tbody>
+		</div>
+       </div>
+<br>
+<footer id="footer">
+<!--<h1 style="line-height:.10";><strong></strong></h1>-->
+
+		<div>
+		<center><h3>Added Friends</h3></center>
+		</div>
+
+
+		
+	</footer>
+
+			<!--js files-->
+			<script src="public/js/ajax.js"></script>
+			<script src="index.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+			</body>
+
+	</html>
