@@ -1310,12 +1310,12 @@
 /* Basic */
 
 	body {
-		background-color: #000000;
-		background-image: url("https://cdn.pixabay.com/photo/2016/11/14/08/24/flowers-1822900_960_720.jpg"), url("../../images/bg.jpg");
+
+		 background-color: #000000;
+		 background-image: url("andrew-neel.png.jpg"), url("andrew-neel.png.jpg");
 		background-repeat: repeat, no-repeat;
-		background-size: auto, cover;
-		background-position: top left, center 0;
-		background-attachment: fixed, fixed;
+		 background-position: top left,    center center,    bottom center;
+   		 background-attachment: fixed,     fixed,        fixed;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 18pt;
 		line-height: 1.75em;
@@ -1324,6 +1324,7 @@
 		color: #3a3939;
 		text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
 		-webkit-text-stroke: 0.25px;
+
 	}
 
 		body.is-scroll {
@@ -2260,7 +2261,7 @@
 
 			body {
 				background-color: #203936;
-				background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");
+				background-image: url("andrew-neel.png.jpg"), url("andrew-neel.png.jpg");
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
 				background-position: top left, top center;
