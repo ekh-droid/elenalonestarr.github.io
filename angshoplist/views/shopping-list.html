@@ -1,6 +1,7 @@
 <form ng-submit='addItem(newItem)' name="list">
 <!--attaches itself to the submitt button, creates a get & gather the info to post -->
 	<label>item</label>
+
 	<input type="text" placeholder="" ng-model="newItem.name">
 
 	<label>quantity</label>
@@ -17,16 +18,9 @@
 	<button type="submit" class="button">add</button>
 </form>
 <!--submit button generates list-->
-<p>{{list}}</p>
-<h3>shopping list</h3>
-<ul>
-<li><button ng-click="order ='qty'">order by quantity</button>
-<button ng-click="order ='qty'">order by name</button>
-<button ng-click="order ='qty'">order by priotity</button></li>
+<br>
+<center><h3>shopping list</h3></center>
 
-<div class="card">
-	<div class="card-block">
-		<ul>
 <!--ng-repeat show the list of items and orders the stuff-->
 		<li ng-repeat="item in items | orderBy: order">
 						qty: {{item.qty}} -

@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <!--this html tags identifies as an angular application -->
-	<head><html lang="en" ng-app='myApp'>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
+<head><html lang="en" ng-app='myApp'>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 			<title>Shopping List Application</title>
 			<link rel="stylesheet" type="text/css" href="main.css">
 			<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
 
-	</head>
-
-	<body class="index">
-		<div id="page-wrapper">
-		<!--Nav Bar-->
-
-		<nav id="nav"><ul>
-		<li class="submenu"><a href="#/home" class="">HOME</a></li>
-		<li class="current"><a href="#/shopping-list" class="">SHOPPING LIST</a></li>
-			</ul>
-			</nav>
+</head>
+<body>
+		<!--Nav Bar-->	<ul>
+							<li class="submenu"><a href="#/home" class="">HOME</a></li>
+							<li class="current"><a href="#/shopping-list" class="">CREATE A LIST</a></li>	   
+						</ul>
 </div>
-</div></div>
-
-		<body>
+	</div>
+<div id="page-wrapper">
 	<section class="wrapper style2 container special-alt">
 		<div class="row 50%">
 			<div class="8u 12u(narrower)">
 			
-			<p><main ng-view></main>
-			</p>
-							
-									</footer>
-</section>
-</div>
-			
-		
-			<!--here, ng-view is a directive.-->
-			
 
+			<p><main ng-view></main></p>
+							
+		
+</div>						
+	</section>
+		</div>
+			</div>
+			
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
 
 			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -56,6 +56,7 @@
     		<script src="./shopping-controller.js"></script>
     		<script src="./shopping-service.js"></script>
     		<script src="./home-controller.js"></script>
+
 		</body>
 
 	</html>
