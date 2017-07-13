@@ -1,37 +1,6 @@
-
-
 /*index div text*/
 function showDiv() {
    document.getElementById('welcomeDiv').style.display = "block", "none";
-};
-
-
-/*! Fades out the whole page when clicking links */
-$('a').click(function(e) {
-e.preventDefault();
-newLocation = this.href;
-$('body').fadeOut('slow', newpage);
-});
-function newpage() {
-window.location = newLocation;
-};
-
-$(document).ready(function(){
-
-/*! Fades in whole page on load */
-$('body').css('display', 'none');
-$('body').fadeIn(500);
-
-}); 
-
-/*! Reloads page on every visit */
-function Reload() {
-try {
-var headElement = document.getElementsByTagName("head")[0];
-if (headElement && headElement.innerHTML)
-headElement.innerHTML += "<meta http-equiv=\"refresh\" content=\"1\">";
-}
-catch (e) {}
 };
 
 (function($) {
@@ -104,7 +73,7 @@ catch (e) {}
 
 
 		// Full screen header.
-			if (settings.fullScreenHeader) {
+/*			if (settings.fullScreenHeader) {
 
 				var $header = $('#header');
 
@@ -134,7 +103,7 @@ catch (e) {}
 				}
 
 			}
-
+*/
 // Parallax background.
 
 	// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms for better performance.
@@ -188,6 +157,68 @@ catch (e) {}
 	//			usePopupNav: true
 	//		});
 
+})(jQuery);
+
+
+
+
+/*! Fades out the whole page when clicking links */
+$('a').click(function(e) {
+	if($(e.target).is("#myCarousel")) return;
+	else {
+e.preventDefault();
+newLocation = this.href;
+$('body').fadeOut('slow', newpage);
+		}
+});
+function newpage() {
+window.location = newLocation;
+};
+
+$(document).ready(function(){
+
+/*! Fades in whole page on load */
+$('body').css('display', 'none');
+$('body').fadeIn(500);
+
+}); 
+
+/*! Reloads page on every visit */
+function Reload() {
+try {
+var headElement = document.getElementsByTagName("head")[0];
+if (headElement && headElement.innerHTML)
+headElement.innerHTML += "<meta http-equiv=\"refresh\" content=\"1\">";
+}
+catch (e) {}
+};
+
+
+$('.carousel').carousel({
+  interval: 5000
+})
 	});
 
-})(jQuery);
+
+var $headline = $('.headline'),
+    $inner = $('.inner'),
+    $nav = $('nav'),
+    navHeight = 75;
+
+$(window).scroll(function() {
+  var scrollTop = $(this).scrollTop(),
+      headlineHeight = $headline.outerHeight() - navHeight,
+      navOffset = $nav.offset().top;
+
+  $headline.css({
+    'opacity': (1 - scrollTop / headlineHeight)
+  });
+  $inner.children().css({
+    'transform': 'translateY('+ scrollTop * 0.4 +'px)'
+  });
+  if (navOffset > headlineHeight) {
+    $nav.addClass('scrolled');
+  } else {
+    $nav.removeClass('scrolled');
+  }
+});
