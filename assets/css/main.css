@@ -325,7 +325,7 @@ a:hover {
 
 .sidebar {
     background-color: black;
-    width: 150px;
+    width: 200px;
     position: fixed;
     top: 20px;
     left: 0px;
@@ -340,7 +340,7 @@ a:hover {
     background-image: url("andrew-neel.png.jpg"), url("andrew-neel.png.jpg");
     position: absolute ;
     top: 0;
-    left: 150px;
+    left: 200px;
     right: 0;
     bottom: 0;
     
@@ -413,7 +413,7 @@ label {
   padding: 1.5em 2em;
   margin: 0 auto;
   background: rgba(255, 255, 255, .75);
-  box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+  box-shadow: ;
 }
 
 .card {
@@ -500,7 +500,6 @@ label {
   height: 225px; 
   max-width: 50vw;
   margin: .5em;
-  box-shadow: .3em .3em .3em rgba(0, 0, 0, .4);
   border: .25em solid white;
   display: inline-block;
 }
@@ -528,7 +527,7 @@ span.title span {
 }
 
 span.title {
-  background: rgba(0,0,0,0.5);
+  background:);
   font-size: 1.6em;
   line-height: 1.2em;
 
