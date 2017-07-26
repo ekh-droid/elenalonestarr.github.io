@@ -324,12 +324,14 @@ a:hover {
 
 
 .sidebar {
-    background-color: black;
+    background-color: #FFF;
     width: 200px;
     position: fixed;
+    padding-left: 10px;
+    padding-right: 10px;
     top: 20px;
     left: 0px;
-    bottom: 0;
+    bottom: 20px;
 }
 
 .sidebar h1 {
@@ -383,7 +385,10 @@ label {
     position: fixed;
     top: 50px;
     left: 50px;
-    background-color: rgba(255, 255, 255, 0.4);
+    font-family: "Big Caslon FB Black", "Big Caslon FB Black", serif;
+    font-size: 14px;
+    line-height: 1.1;
+    -webkit-font-smoothing: antialiased;
     -moz-transition: left 0.5s ease;
     transition: left 0.5s ease;
 }
@@ -528,11 +533,11 @@ span.title span {
 
 span.title {
   background:);
-  font-size: 1.6em;
+  font-size: 1.2em;
   line-height: 1.2em;
-
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-weight: bold;
   color: white;
   cursor: pointer;
   display: table;
