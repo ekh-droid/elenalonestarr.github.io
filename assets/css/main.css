@@ -329,6 +329,8 @@ a:hover {
     top: 20px;
     left: 0px;
     bottom: 20px;
+    z-index: -1000;
+
 }
 
 .sidebar h1 {
@@ -1941,6 +1943,7 @@ span.title {
 		color: #3a3939;
 		text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
 		-webkit-text-stroke: 0.25px;
+    z-index: -1;
 
 	}
 
@@ -2317,6 +2320,8 @@ span.title {
 			}
 
 /* Button */
+
+
 
 	input[type="button"],
 	input[type="submit"],
