@@ -663,7 +663,10 @@ span.title {
 		box-sizing: border-box;
 	}
 
-
+.box.style1 {
+    background: #fff;
+    padding: 4em;
+}
 /* carosel */
 .carosel-inner {
 	align-content: center;
@@ -680,6 +683,10 @@ span.title {
 		margin-right: auto;
   }
 
+element.style {
+    padding-left: 80px;
+    padding-right: 80px;
+}
     @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -1085,6 +1092,11 @@ span.title {
 	.\-1u {
 		margin-left: 8.33333%;
 	}
+
+  @media screen and (max-width: 1680px) {}
+    body, input, textarea, select {
+    font-size: 12pt;
+}
 
 	@media screen and (max-width: 1680px) {
 
