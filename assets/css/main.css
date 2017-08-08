@@ -321,15 +321,20 @@ a:hover {
 }
 
 .sidebar {
+
     background-color: #FFF;
     width: 180px;
     position: fixed;
     padding-left: 10px;
-    padding-right: 10px;
-    top: 20px;
+    padding-right: 30px;
+    border-right:8px solid white;
+    top: 0px;
     left: 0px;
-    bottom: 20px;
+    font-size: 11px;
+    bottom: 0px;
     z-index: -1000;
+    overflow-y: scroll;
+  }
 
 }
 
@@ -391,9 +396,6 @@ label {
     -moz-transition: left 0.5s ease;
     transition: left 0.5s ease;
 }
-
-
-
 
 /* Off-screen text for accessibility */
 .screen-reader-text {
@@ -496,11 +498,11 @@ p-block {
 }
 
 .app {
-
-  width: 215px;
+  width: 33%px;
   height: 190px; 
   max-width: 50vw;
   margin: .5em;
+  border: none;
   display: inline-block;
   transition:all .8s ease-in-out;
 -webkit-transition:all .2s ease-in-out;
@@ -512,7 +514,7 @@ overflow: hidden;
 }
 
 .app:hover {
-  width: 215px;
+  width: 33%px;
   height: 190px; 
   max-width: 50vw;
   margin: .5em;
@@ -528,7 +530,7 @@ transform:scale(1.7);
 
 /* Title captions for FCC apps */
 span.title {
-  background: rgba(109, 198, 224,0.7);
+  background: rgba(255,69,0,0.5);
   color: white;
   font-family: 'SourceSansPro';
   cursor: pointer;
@@ -602,6 +604,11 @@ span.title {
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
+
+  .navbar-nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
 	body {
 		line-height: 1;
@@ -677,6 +684,12 @@ span.title {
 	padding: 20px;
 }
 /* Containers */
+
+  .inline {
+    display: inline;
+    float: left;
+    padding: 10px;
+  }
 
 	.container {
 		margin-left: auto;
@@ -2050,11 +2063,12 @@ element.style {
 		color: rgba(58, 57, 57, 0.9);
 		text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
 		text-decoration: none;
-		border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
+    border-bottom: #333;
 	}
 
 		a:hover {
-      color: #FFF;
+      color: royalblue;
+      border-bottom: #333;
 			border-bottom-color: rgba(53, 184, 143, 0);
 		}
 
@@ -2073,8 +2087,10 @@ element.style {
 	hr {
 		border: 0;
 		border-top: solid 1px #dad9d9;
-		margin: 2em 0 2em 0;
+		margin: 1em;
 	}
+
+
 
 	blockquote {
 		border-left: solid 0.5em #eae9e9;
@@ -2084,6 +2100,7 @@ element.style {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 1em;
+    font-size: 14px;
 	}
 
 	header {
@@ -2353,8 +2370,32 @@ element.style {
 
 /* Button */
 
+.btn-default  {
+  -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-appearance: none;
+    position: relative;
+    display: inline-block;
+    border: 0;
+    background: #edd0c0;
+    color: #fff;
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+    padding: 10px 18px 10px 18px;i
+    margin-top: 0px;
+    text-align: center;
+    border-radius: 3em;
+    font-weight: 400;
+}
 
-
+.btn-default:hover  {
+background:#f5ded1;
+  
+}
 	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
@@ -2576,11 +2617,20 @@ element.style {
 /* Icons */
 
 	.icon {
-		text-decoration: none;
+    position: absolute;
+    bottom: px;
+    left: 0;
+    right: 0;
+    font-family: FontAwesome;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+}
 	}
 
 		.icon:before {
-			display: inline-block;
+      color: #000;
+			display: inline;
 			font-family: FontAwesome;
 			font-size: 1.25em;
 			text-decoration: none;
@@ -2757,8 +2807,8 @@ element.style {
 			padding: 0.75em 2em 0.75em 2em;
 			border-radius: 3em;
 			border: solid 1px #fff;
-			display: inline-block;
-			margin: 0 0 3em 0;
+			display: inline;
+			
 		}
 
 		#footer .copyright {
@@ -2947,7 +2997,7 @@ element.style {
 			}
 
 			h1, h2, h3, h4, h5, h6 {
-				line-height: 1.5em;
+				line-height: 0.8em;
 			}
 
 			header p {
